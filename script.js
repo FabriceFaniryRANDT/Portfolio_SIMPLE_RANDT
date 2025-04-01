@@ -16,3 +16,14 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 });
+const lis = document.querySelectorAll('li')
+const nav = document.querySelector('nav')
+const logo = document.querySelector('.logo')
+
+
+lis.forEach(li => li.addEventListener('click', () => {
+  nav.classList.remove('show')
+}))
+logo.addEventListener('click', ()=>{
+  nav.classList.toggle('show')
+})
